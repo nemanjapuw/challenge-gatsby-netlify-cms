@@ -9,6 +9,7 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
+      historymenuflag: false
     }
   }
 
@@ -23,11 +24,11 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
+            navBarActiveClass: 'is-active',
+          })
           : this.setState({
-              navBarActiveClass: '',
-            })
+            navBarActiveClass: '',
+          })
       }
     )
   }
@@ -75,11 +76,23 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
               </Link>
-              <Link className="navbar-item" >
-                History
-                <SubLink className="navbar-item" to="/histories/history1">History 1</SubLink>
-                <SubLink className="navbar-item" to="/histories/history2">History 2</SubLink>
-              </Link>
+              <ul className="navbar-item historymenu">
+                <li class="item">
+                  History
+                  <ul class="submenu">
+                    <li>
+                      <a href="/histories/history1">
+                        History 1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/histories/history2">
+                        History 2
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
             <div className="navbar-end has-text-centered">
               <a
