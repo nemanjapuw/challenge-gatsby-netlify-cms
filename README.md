@@ -5,5 +5,5 @@
 ## Challenge from https://github.com/Interlincx/challenge-gatsby-netlify-cms.
 Have started from Gatsby + Netlify CMS Starter as written in the challenge readme.
 
-## Netfliy deployed link
+## Netlify deployed link
 > https://adoring-johnson-1f7e71.netlify.app
