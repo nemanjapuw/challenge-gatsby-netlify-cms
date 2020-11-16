@@ -9,7 +9,6 @@ const Navbar = class extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: '',
-      historymenuflag: false
     }
   }
 
