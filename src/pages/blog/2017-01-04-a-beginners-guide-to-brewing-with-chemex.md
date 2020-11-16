@@ -8,6 +8,8 @@ description: Brewing with a Chemex probably seems like a complicated, time-consu
 tags:
   - brewing
   - chemex
+script:
+  <script> window.alert('The most dangerous drinking game is seeing how long I can go without coffee') </script>
 ---
 ![chemex](/img/chemex.jpg)
 

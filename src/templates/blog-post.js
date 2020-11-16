@@ -54,11 +54,22 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
+function ExtractScriptContentOnly(script) {
+  var s = script.replace('<script>', '')
+  s = s.replace('</script>', '')
+
+  return s
+}
+
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const scripts = ExtractScriptContentOnly(post.frontmatter.script)
 
   return (
     <Layout>
+      <Helmet>
+        <script>{scripts}</script>
+      </Helmet>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -97,6 +108,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        script
       }
     }
   }

@@ -8,6 +8,8 @@ description: The Coffee Taster’s Flavor Wheel, the official resource used by c
 tags:
   - flavor
   - tasting
+script:
+  <script> window.alert('The most dangerous drinking game is seeing how long I can go without coffee') </script>
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
